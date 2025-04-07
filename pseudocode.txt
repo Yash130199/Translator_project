@@ -1,47 +1,49 @@
-1. Start the program
+1. Start Program
+2. Load translations from "translations.json" file
+    a. If file doesn't exist, initialize an empty dictionary
 
-2. Load the existing translations from the JSON file
-    - If the file does not exist, create an empty dictionary
-
-3. Show the main menu with the following options:
+3. Show menu with the following options:
     1. Translate a phrase
     2. Add a new translation
     3. Show all translations
-    4. Exit the program
+    4. Exit
     5. Edit a translation
     6. Search for a translation
 
-4. Repeat the following until the user chooses to exit:
-    a. Ask the user to choose an option
+4. Get user input for the choice (1-6)
 
-    b. If the user chooses:
+5. Depending on the user's choice:
+    a. Option 1: Translate a phrase
+        i. Ask user for the English phrase
+        ii. Check if the phrase exists in the translations dictionary
+        iii. If found, print the translation
+        iv. If not found, print "Sorry, translation not found."
     
-        Option 1: Translate a phrase
-            - Ask the user to enter an English phrase
-            - Look up the translation in the dictionary
-            - Show the translation or a "not found" message
+    b. Option 2: Add a new translation
+        i. Ask user for the English phrase
+        ii. Ask user for the translation in the target language
+        iii. Add the new translation to the dictionary
+        iv. Save the updated dictionary to "translations.json"
+        v. Print "Translation added successfully!"
+    
+    c. Option 3: Show all translations
+        i. Print all translations from the dictionary (English phrase => Translation)
 
-        Option 2: Add a new translation
-            - Ask the user to enter an English phrase
-            - Ask for its translation
-            - Add the pair to the dictionary
-            - Save the updated dictionary to the JSON file
+    d. Option 4: Exit
+        i. Print "Goodbye!" and exit the program
+    
+    e. Option 5: Edit a translation
+        i. Ask user for the English phrase to edit
+        ii. Check if the phrase exists in the dictionary
+        iii. If found, ask for the new translation
+        iv. Update the translation and save the changes to "translations.json"
+        v. Print "Translation updated successfully!"
 
-        Option 3: Show all translations
-            - Print each English phrase and its translation
+    f. Option 6: Search for a translation
+        i. Ask user for the phrase to search for
+        ii. Check if the phrase exists in the dictionary
+        iii. If found, print the translation
+        iv. If not found, print "Phrase not found."
 
-        Option 4: Exit the program
-            - Print a goodbye message and stop the loop
-
-        Option 5: Edit a translation
-            - Ask for the English phrase to edit
-            - If it exists, ask for the new translation
-            - Update it in the dictionary and save it
-
-        Option 6: Search for a translation
-            - Ask for the phrase to search
-            - Show the translation or a "not found" message
-
-    c. If the user enters an invalid choice, show an error message
-
-5. End the program
+6. Repeat the process until the user selects "Exit"
+7. End Program

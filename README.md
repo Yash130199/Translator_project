@@ -1,19 +1,11 @@
-# Phrase Translator
+# Translator Project
 
 ## Description
-This project is a simple English to Spanish phrase translator. It allows users to translate common English phrases into Spanish, add new translations, edit existing ones, and view all translations.
+The Translator Project is a simple command-line interface (CLI) program designed to translate 10 common English sayings and phrases into a chosen language. The program also allows the user to add more translations, view existing translations, edit them, and search for specific translations. The translations are stored in a JSON file for persistence.
 
-## Features
-- Translate an English phrase into Spanish.
-- Add new translations to the system.
-- Edit existing translations.
-- View all stored translations.
+The program is built using Python and is designed to be user-friendly, making it easy for anyone to translate, manage, and expand their collection of translations.
 
-## Installation Instructions
+## Installation
 
-1. Clone or download the project files.
-2. Install Python 3.x (if not already installed).
-3. Open your terminal and navigate to the `Translator_project` folder.
-4. Run the program using the following command:
-   ```bash
-   python main.py
+1. **Clone the Repository**:
+   To get started, clone the repository to your local machine:
